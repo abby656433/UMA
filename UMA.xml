@@ -18,6 +18,30 @@
         <statement name="DO">
           <block type="movement_left" id="61"></block>
         </statement>
+        <next>
+          <block type="controls_repeat" id="75" inline="true">
+            <value name="TIMES">
+              <block type="math_number" id="92">
+                <field name="NUM">30000</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="movement_right" id="85"></block>
+            </statement>
+            <next>
+              <block type="controls_repeat" id="99" inline="true">
+                <value name="TIMES">
+                  <block type="math_number" id="136">
+                    <field name="NUM">30000</field>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="movement_reverse" id="129"></block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
       </block>
     </next>
   </block>
