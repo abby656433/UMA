@@ -29,17 +29,29 @@
               <block type="movement_forward" id="156"></block>
             </statement>
             <next>
-              <block type="controls_repeat" id="99" inline="true">
+              <block type="controls_repeat" id="173" inline="true">
                 <value name="TIMES">
-                  <block type="math_number" id="136">
+                  <block type="math_number" id="190">
                     <field name="NUM">30000</field>
                   </block>
                 </value>
                 <statement name="DO">
-                  <block type="movement_right" id="166"></block>
+                  <block type="movement_left" id="183"></block>
                 </statement>
                 <next>
-                  <block type="movement_stop" id="146"></block>
+                  <block type="controls_repeat" id="203" inline="true">
+                    <value name="TIMES">
+                      <block type="math_number" id="210">
+                        <field name="NUM">30000</field>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block type="movement_forward" id="220"></block>
+                    </statement>
+                    <next>
+                      <block type="movement_stop" id="146"></block>
+                    </next>
+                  </block>
                 </next>
               </block>
             </next>
